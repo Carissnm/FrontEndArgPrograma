@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl: "https://backendpettinaroli.herokuapp.com/"
+  apiBaseUrl: 'https://backendpettinaroli.herokuapp.com/'
 };

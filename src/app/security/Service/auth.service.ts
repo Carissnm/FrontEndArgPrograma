@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../Entity/nuevo-usuario';
 })
 export class AuthService {
   
-  authUrl = 'http://localhost:8080/auth/';
+  authUrl = 'https://backendpettinaroli.herokuapp.com/';
 
   constructor(private httpClient: HttpClient) { }
 
