@@ -1,0 +1,61 @@
+<div class="wrapper">
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="barra_login">
+        <h1>Bienvenid@ a mi <span class="bienvenida">Portfolio</span></h1>
+        <ul class="login_list">
+            <li *ngIf="!isLogged">
+                <button type="button" data-toggle="modal" data-target="#popUpWindow"><i class="fa-solid fa-door-closed"></i>    Login</button>
+            </li>
+            <li *ngIf="isLogged" (click)="onLogOut()">
+                <button type="button" data-toggle="modal"><i class="fa-solid fa-door-open"></i>   Logout</button>
+            </li>
+        </ul>
+    </div>
+    <div class="modal" id="popUpWindow">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div><br>
+            <div class="modal-body">
+                <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                    <div class="form-group">
+                        <label for="nombreUsuario">Nombre de Usuario</label>
+                        <input type="text" name="nombreUsuario" id="nombreUsuario" class="form-control" [(ngModel)]="nombreUsuario" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" class="form-control" [(ngModel)]="password" required/>
+                    </div> <br>
+                    <div class="form-group">
+                        <button class="btn" [disabled]="!f.valid">
+                            <i class="fa-solid fa-arrow-right-to-bracket" data-dismiss="modal"></i>
+                            Iniciar Sesión
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+    
+
+
+

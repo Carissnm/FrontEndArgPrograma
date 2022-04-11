@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/portfolio-carolina-pettinaroli",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

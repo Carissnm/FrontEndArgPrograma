@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    font-family: 'Cabin', sans-serif;
+    background-color: #FA92E7;
+    padding: 3px;     
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+nav ul li a{
+    color: #720F64;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+
+
+.container {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(../../assets/img/sobremibanner1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.column,
+.column2 {
+    margin-left: 10px;
+    padding: 15px;
+    
+    
+}
+
+.column {
+    padding: 30px;
+}
+
+.column2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+ /* Nombre y Apellido */
+.sobremi {
+    width: 100%;  
+}
+
+.sobremi2{
+    width: 100%;
+    font-size: smaller;
+    color: white;
+    font-style: italic;
+    padding: 25px;
+    text-align: right;
+    left: 50%;
+} 
+.column h1 {
+    font-family: 'Cabin', sans-serif ;
+    color: white;
+    font-size: 25px;
+    font-weight: 50;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-top: 0.2em;
+    line-height: 10px;
+}
+
+#strong {
+    font-weight: 1000;
+}
+
+.column h2 {
+    font-family: 'Cabin', sans-serif ;
+    color: antiquewhite;
+    font-size: larger;
+    font-weight: lighter;
+    font-size: 15px;
+    height: 10px;
+    text-align: end;
+    text-shadow: 1px 2px 5px  #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+.column img {
+    width: 50%;
+    border-radius: 50%;
+    border: rgb(250, 174, 237) solid 1.5px;
+    
+
+}
+
+ /* Desde acá es la barra de login  */
+
+
+h1,
+h2 {
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ccc ;
+}
+
+.column3 {
+    display: flex;
+    text-align: center;
+    
+    
+    align-items: flex-end;
+    
+    align-self: flex-end;
+    padding: 10px;
+    
+    
+}
+
+.column3 a {
+    text-decoration: none;
+    background-color: #3CC14E;
+    padding: 4px;
+    border-radius: 50%;
+    box-shadow: 1px 4px 7px rgb(78, 61, 78);
+    
+}
+
+.column3 a i {
+    width: 29px;
+    height: 20px;
+    color: white;
+    font-size: 24px;
+    line-height: 26px;
+    
+}
+
+#login {
+    display: flex;
+    justify-self: end;
+    background-color:#fa92e7;
+    border-color: #f8e6f1;
+    border-radius: 0.5em;
+    padding: 10px;
+    margin: 2em;
+    width: 90%;
+    opacity: 80%;
+    align-items: center;
+}
+
+#formulario {
+    padding: 10px;
+    justify-content: flex-end;
+    align-self:baseline;
+    align-items: center;
+    
+    
+
+}
+
+::placeholder {
+    color: white;
+    font-size: 1em;
+    opacity: 70%;
+}
+
+#boton_login {
+    background: none;
+    border-style:initial;
+    border-color: #f8e6f1;
+    color: white;
+    padding: 2px;
+    margin-bottom: 5px;
+    opacity: 50%;
+    transition: 1s;
+    justify-content: center;
+}
+
+#boton_login:hover {
+    opacity: 90%;
+    color: white;
+}
+
+#user_login,
+#password {
+    background: none;
+    border-top: 0em;
+    border-left: 0em;
+    border-right: 0em;
+    border-color: #f8e6f1;
+    color: #f8e6f1;  
+    transition: 1s; 
+}
+
+ /* barra de navegación */
+
+
+
+#login {
+    size: 1em;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+
+
+.column h1 {
+    font-weight: lighter;
+}
+
+h1 span {
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #f06de9;
+    text-shadow: 0 3 5px rgb(189, 173, 173) ;
+}
+
+#eliminar-editar-sobremi {
+    text-align:right;
+}
+
+
+
+#eliminar-editar-sobremi i {
+    color: #f5bfeb;
+    text-decoration:dotted;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.botones_contenido {
+    border: none;
+    background: none;
+    padding: 2px;
+}
+
+
+.boton_edicion_texto {
+    padding: 2px 10px;
+    margin-top: 10px;
+    background: #7C3772;
+    color:#f8e6f1;
+    border-radius: 5px;
+    font-size: 10px;
+    border: none;
+    
+    
+}
+
+.close {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background:#f8e6f1;
+    color: #7C3772;
+}
+
+.boton_eliminar {
+    padding: 2px 10px;
+    margin-top: 10px;
+    background: #7C3772;
+    color:#f8e6f1;
+    border-radius: 5px;
+    font-size: 10px;
+    border: none;
+}
+
+/* #addPersonaModal form,
+#updatePersonaModal form,
+#deletePersonaModal form  {
+    font-size: 16px;
+    padding: 30px;
+    width: 500px;
+    justify-self: center;
+    
+
+} */
+
+/* modales */
+.modal-dialog {
+    width: 50%;
+    padding: 15px;
+    justify-content: center;
+    align-self: center;
+    top: 10%;
+    left: 25%;
+}
+
+    
+.modal-body {
+    padding: 10px;
+    
+}
+
+.modal-header button {
+    border: none;
+    background: none;
+    text-align: right;
+    color: #720F64;
+}
+
+.modal-header h5 {
+    color: #720F64;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.modal-content {
+    padding: 20px;
+    background-color: rgb(248, 245, 247);
+}
+
+.form {
+    line-height: 20px;
+}
+
+.modal-body form label {
+    line-height: 7px;
+    margin-top: 5px;
+    color: #720F64;
+}
+
+.modal-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 10px 0px 10px;
+    
+}
+
+.modal-footer button {
+    border: none;
+    color: #720F64;
+    margin: 5px;
+    padding: 2px 5px;
+    border-color: none;
+
+}
+
+.modal-footer .boton-editar {
+    border: none;
+    color: #720F64;
+    margin: 5px;
+    padding: 2px 5px;
+    border-color: none;
+}
+
+.modal-body form input {
+    width: 100%;
+}
+
+
+#update-persona-modal {
+    padding: 3px 5px;
+    color: #720F64;
+}
+
+
+

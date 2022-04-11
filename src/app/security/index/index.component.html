@@ -1,0 +1,47 @@
+<app-menu></app-menu>
+<div *ngIf="isLogged" class="fondo-index">
+    <app-persona></app-persona>
+    <app-estudios></app-estudios>
+    <app-skills></app-skills>
+    <app-experiencialaboral></app-experiencialaboral>
+    <app-proyectos></app-proyectos>
+    <footer>
+        <div class="barra">
+            <div id="logo"> <!-- Logo de Arg Programa y formulario de login-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="logo-arg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fa92e7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8 9l3 3l-3 3" />
+                    <line x1="13" y1="15" x2="16" y2="15" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                </svg>
+                <h3 class="argprog">Argentina Programa</h3>
+            </div>
+        </div>
+        <div class="redes">
+            <ul class="redes_sociales">
+                <li>
+                    <a href="https://www.linkedin.com/in/carolina-pettinaroli-302aba16/" target="_blank"> 
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Carissnm" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/carissnm/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/cpettinaroli/?hl=es-la" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>   
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <a href="#" class="subir" *ngIf="isLogged"><i class="fa-solid fa-angles-up"></i></a>
+</div>
+

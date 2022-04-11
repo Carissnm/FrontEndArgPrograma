@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-container {
+    background-color: #e0c3d5;
+    /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.7)), url(../../assets/img/wallpaper.jpg); */
+    background-size: cover;
+    min-width: 100%;
+}
+.contenido {
+    display: grid;
+    row-gap: 1em;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    
+    
+}
+
+#skills {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.8em;
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+#skills h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #b1189c;
+    border-bottom: 1px #b1189c solid;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    justify-self: center;
+    
+}
+
+.botones_contenido {
+    border: none;
+    background: none;
+    padding: 2px;
+}
+
+
+.boton_edicion_texto {
+    padding: 2px 10px;
+    margin-top: 10px;
+    background: #7C3772;
+    color:#f8e6f1;
+    border-radius: 5px;
+    font-size: 10px;
+    border: none;
+    
+    
+}
+
+.close {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background:#f8e6f1;
+    color: #7C3772;
+}
+
+.boton_eliminar {
+    padding: 2px 10px;
+    margin-top: 10px;
+    background: #7C3772;
+    color:#f8e6f1;
+    border-radius: 5px;
+    font-size: 10px;
+    border: none;
+}
+
+.bar {
+    background: #F8E6F1;
+    display: block;
+    height: 10px;
+    /* border: 1px solid rgba(153, 149, 149, 0.3); */
+    /* border-radius: 10px; */
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    text-align: center;
+}
+
+.bar:hover {
+    box-shadow: 0 14px 15px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: rgba(252,103,103,1);
+}
+/* 
+.html {
+    width: 80%;
+    animation: html 3s;
+}
+.css {
+    width: 70%;
+    animation: css 3s;
+}
+.javascript {
+    width: 40%;
+    animation: javascript 3s;
+}
+.angular {
+    width: 60%;
+    animation: angular 3s;
+}
+.mysql {
+    width: 60%;
+    animation: mysql 3s;
+}
+.equipo {
+    width: 80%;
+    animation: equipo 3s;
+}
+.flexibilidad {
+    width: 90%;
+    animation: flexibilidad 3s;
+}
+.responsabilidad {
+    width: 100%;
+    animation: responsabilidad 3s;
+}
+.gestion {
+    width: 80%;
+    animation: gestion 3s;
+}
+.liderazgo {
+    width: 90%;
+    animation: liderazgo 3s;
+} */
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+
+.cajas {
+    /* display: flex;
+    flex-wrap: nowrap; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+} 
+
+.hardskills {
+    font-family: Helvetica, sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    line-height: 1px;
+    justify-self: center;
+    
+    
+}
+
+.hardskills h5,
+.softskills h5 {
+    font-size: 1.1em;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+.hardskills li,
+.softskills li {
+    margin: 7px 0;
+    padding: 5px;
+}
+
+#eliminar-editar-skills,
+#eliminar-editar-trabajos {
+    text-align: end;
+    
+}
+
+i {
+    color: #b1189c;
+    font-size: 10px;
+}
+
+
+
+.skillnombre {
+    font-weight: bolder;
+    color: black;
+    font-size: 12px;
+}
+
+.porc {
+    font-weight: bolder;
+    line-height: 15px;
+    font-size: 10px;
+    color: #851275;
+
+    
+}
+
+
+.modal-dialog {
+    width: 50%;
+    padding: 15px;
+    justify-content: center;
+    align-self: center;
+    top: 10%;
+    left: 25%;
+}
+
+    
+.modal-body {
+    padding: 10px;
+}
+
+.modal-header button {
+    border: none;
+    background: none;
+    text-align: right;
+    color: #720F64;
+}
+
+.modal-header h5 {
+    color: #720F64;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.modal-content {
+    padding: 20px;
+    background-color: rgb(248, 245, 247);
+}
+
+.form {
+    line-height: 20px;
+}
+
+.modal-body form label {
+    line-height: 7px;
+    margin-top: 5px;
+    color: #720F64;
+}
+
+.modal-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 10px 0px 10px;
+    
+}
+
+.modal-footer button {
+    border: none;
+    color: #720F64;
+    margin: 5px;
+    padding: 2px 5px;
+    border-color: none;
+
+}
+
+.modal-footer .boton-editar {
+    border: none;
+    color: #720F64;
+    margin: 5px;
+    padding: 2px 5px;
+    border-color: none;
+}
+
+.modal-body form input {
+    width: 100%;
+}
+
+#update-skills-modal {
+    padding: 3px 5px;
+    color: #720F64;
+}
+
+

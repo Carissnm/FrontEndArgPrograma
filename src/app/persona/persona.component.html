@@ -1,0 +1,160 @@
+<nav>
+    <ul>
+        <li class="nav"><a class="nav-link" href="#trabajos">EXPERIENCIA LABORAL</a></li>
+        <li class="nav"><a class="nav-link" href="#skills">H&S SKILLS</a></li>
+        <li class="nav"><a class="nav-link" href="#main-container">ESTUDIOS</a></li>
+        <li class="nav"><a class="nav-link" href="#proyectos">PROYECTOS</a></li>
+    </ul> 
+</nav>
+
+<div class="container" *ngFor="let per of personas">
+    
+    <div class="column">
+        <img src={{per.urlImagen}} alt="foto de carolina pettinaroli" id="foto_cv"> 
+        <div id="eliminar-editar-sobremi" *ngIf="isAdmin">
+            <button (click)="onOpenModal(null!,'add')" type="button" class="botones_contenido">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <button (click)="onOpenModal(per,'edit')" type="button" class="botones_contenido">
+                <i class="fa-solid fa-pen"></i>
+            </button>
+            <button (click)="onOpenModal(per,'delete')"  type="button" class="botones_contenido">
+                <i class="fa-solid fa-eraser"></i>  
+            </button>
+        </div>
+        <h1> {{per.nombre}}<span id="strong">{{per.apellido}} </span> </h1>
+        <h2> {{per.ocupacion}} </h2>
+        
+    </div>
+    <div class="column2">
+        <div class="sobremi">
+            <div class="sobremi2" *ngFor="let per of personas">
+                <span class="sobremiparrafo"> {{per.sobremi}}</span>
+                <div class="edit-parrafo" id="eliminar-editar-sobremi" *ngIf="isAdmin">
+                    <button (click)="onOpenModal(null!,'add')" type="button" class="botones_contenido">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button (click)="onOpenModal(per,'edit')" type="button" class="botones_contenido">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button (click)="onOpenModal(per,'delete')"  type="button" class="botones_contenido">
+                        <i class="fa-solid fa-eraser"></i>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="column3" *ngFor="let per of personas">
+        <a href="https://wa.me/{{per.telefono}}" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>        
+    </div>
+</div>
+
+
+
+<div class="division"></div>
+
+<!-- Modal para agregar Skill -->
+<div class="modal fade" id="addPersonaModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="addSkillsModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Agregar Habilidades</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form #addForm="ngForm" (ngSubmit)="onAddPersona(addForm)">
+                    <label for="nombre">Nombre</label><br>
+                    <input ngModel type="text" name="nombre"  class="form-control">
+                    <label for="apellido">Apellido</label>
+                    <input  type="text" name="apellido" ngModel class="form-control">
+                    <label for="ocupacion">Ocupación</label><br>
+                    <input ngModel type="text" ngModel name="ocupacion"  class="form-control">
+                    <label for="telefono">Teléfono</label><br>
+                    <input ngModel type="text" ngModel name="telefono"  class="form-control">
+                    <label for="email">Correo Electrónico</label><br>
+                    <input ngModel type="text" ngModel name="email"  class="form-control">
+                    <label for="sobremi">Sobre Mí</label><br>
+                    <input ngModel type="text" ngModel name="sobremi"  class="form-control">
+                    <label for="urlImagen">Imagen</label><br>
+                    <input ngModel type="text" ngModel name="urlImagen"  class="form-control"><br>
+                    <div class="modal-footer">
+                        <button  type="button" id="add-persona-modal" class="btn" data-dismiss="modal">Cancelar</button>
+                        <button [disabled]="addForm.invalid" type="submit" class="btn" data-dismiss="modal">Agregar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Modal para actualizar Skill -->
+<div class="modal fade" id="updatePersonaModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Editar Usuario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form #editForm="ngForm">
+                    <label for="nombre">Nombre</label><br>
+                    <input ngModel type="text" ngModel="{{editPersona?.nombre}} " name="nombre"  class="form-control">
+                    <label for="apellido">Apellido</label><br>
+                    <input  type="text" name="apellido" ngModel="{{editPersona?.apellido}}" class="form-control">
+                    <label for="ocupacion">Ocupación</label><br>
+                    <input ngModel type="text" ngModel="{{editPersona?.ocupacion}} " name="ocupacion"  class="form-control">
+                    <label for="telefono">Teléfono</label><br>
+                    <input ngModel type="text" ngModel="{{editPersona?.telefono}} " name="telefono"  class="form-control">
+                    <label for="email">Correo Electrónico</label><br>
+                    <input ngModel type="text" ngModel="{{editPersona?.email}} " name="email"  class="form-control">
+                    <label for="sobremi">Sobre Mí</label><br>
+                    <input ngModel type="text" ngModel="{{editPersona?.sobremi}} " name="sobremi"  class="form-control">
+                    <label for="urlImagen">Imagen</label><br>
+                    <input ngModel type="text" ngModel="{{editPersona?.urlImagen}} " name="urlImagen"  class="form-control">
+                    <input type="hidden" name="id" ngModel="{{editPersona?.id}} ">
+                    <div class="modal-footer">
+                        <button id="update-persona-modal" type="button" class="btn" data-dismiss="modal">Cancelar</button>
+                        <button (click)="onUpdatePersona(editForm.value)" type="button" class="btn" data-dismiss="modal">Guardar cambios</button>
+                    </div>
+                </form>
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal para borrar Skill -->
+<div class="modal fade" id="deletePersonaModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Esta acción eliminará {{deletePersona?.nombre}} . ¿Desea continuar?</p>
+            </div>
+            <div class="modal-footer borrar">
+            <button type="button" class="btn" data-dismiss="modal">No</button>
+            <button (click)="onDeletePersona(deletePersona.id)" type="button" class="btn" data-dismiss="modal">Sí</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
