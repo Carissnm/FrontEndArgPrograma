@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { JwtDTO } from '../Entity/jwt-dto';
 import { LoginUsuario } from '../Entity/login-usuario';
 import { NuevoUsuario } from '../Entity/nuevo-usuario';
@@ -10,7 +11,9 @@ import { NuevoUsuario } from '../Entity/nuevo-usuario';
 })
 export class AuthService {
   
-  authUrl = 'https://backendpettinaroli.herokuapp.com/';
+ authUrl = environment.apiAuthUrl;
+
+
 
   constructor(private httpClient: HttpClient) { }
 

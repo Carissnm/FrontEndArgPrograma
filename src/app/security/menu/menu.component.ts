@@ -48,8 +48,8 @@ export class MenuComponent implements OnInit {
 
   onLogin(): void {
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
-    this.authService.login(this.loginUsuario).subscribe(
-      data => {
+    this.authService.login(this.loginUsuario).subscribe({
+      next: (data) => {
         this.isLogged = true;
         this.isLoginFail = false;
 
@@ -60,15 +60,15 @@ export class MenuComponent implements OnInit {
         this.router.navigate(['/']);
         window.location.reload();
       },
-      err => {
+      error: (err) => {
         this.isLogged = false;
         this.isLoginFail = true;
-        this.errorMessage = err.error.message;
-        console.log(err.error.message);
+        this.errorMessage = err.error.error;
+        console.log(err.error.error);
         
 
       }
-    )
+    })
   }
 
   

@@ -10,6 +10,7 @@ import { ExperiencialaboralComponent } from './experiencialaboral/experiencialab
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { PersonaComponent } from './persona/persona.component';
 
+
 const routes: Routes = [
   {path: '', component: IndexComponent},
   {path: 'login', component: LoginComponent},

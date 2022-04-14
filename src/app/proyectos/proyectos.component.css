@@ -40,13 +40,8 @@
     color: #b1189c;
 }
 
-.grid {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 2fr 2fr;
-    width: 100%;
-    padding: 30px;
-    padding-bottom: 40px;
+.flex {
+    display: flex;
 }
 
 .imagenproyecto {
@@ -67,9 +62,9 @@
 
 #eliminar-editar-proyectos {
     width: 15%;
-    position: relative;
-    bottom: 40px;
-    left: 20px;
+    /* position: relative; */
+    /* bottom: 40px;
+    left: 20px; */
     padding: 2px;
     border-radius: 2px;
     background-color: #c782ad;

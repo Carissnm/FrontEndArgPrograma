@@ -38,8 +38,8 @@ export class LoginComponent implements OnInit {
 
   onLogin(): void {
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
-    this.authService.login(this.loginUsuario).subscribe(
-      data => {
+    this.authService.login(this.loginUsuario).subscribe({
+      next: (data) => {
         this.isLogged = true;
         this.isLoginFail = false;
 
@@ -49,14 +49,14 @@ export class LoginComponent implements OnInit {
         this.roles = data.authorities;
         this.router.navigate(['/']);
       },
-      err => {
+      error: (err) => {
         this.isLogged = false;
         this.isLoginFail = true;
-        this.errorMessage = err.error.message;
-        console.log(err.error.message);
-
+        console.log(err);
+        /*this.errorMessage = err.error.message;
+        console.log(err.error.message);*/
       }
-    )
+    })
   }
 
 }
