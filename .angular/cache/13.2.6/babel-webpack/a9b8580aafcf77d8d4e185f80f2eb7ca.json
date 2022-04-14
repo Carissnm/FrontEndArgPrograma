@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  apiBaseUrl: 'https://backendpettinaroli.herokuapp.com/',\n  apiAuthUrl: 'https://backendpettinaroli.herokuapp.com/auth/login'\n};","map":null,"metadata":{},"sourceType":"module"}

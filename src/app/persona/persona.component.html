@@ -6,13 +6,8 @@
         <li class="nav"><a class="nav-link" href="#proyectos">PROYECTOS</a></li>
     </ul> 
 </nav>
-<h1>Holaaa</h1>
+
 <div class="container" *ngFor="let per of personas">
-    <div *ngIf="isAdmin">
-        <button (click)="onOpenModal(null!,'add')" type="button" class="botones_contenido">
-            <i class="fa-solid fa-plus"></i>
-        </button>
-    </div>
     <div class="column">
         <img src={{per.urlImagen}} alt="foto de carolina pettinaroli" id="foto_cv"> 
         <div id="eliminar-editar-sobremi" *ngIf="isAdmin">
