@@ -23,7 +23,7 @@
 
 
 .argprog {
-    font-size: 0.8em;
+    font-size: 15px;
     font-family: 'Encode Sans', sans-serif;
     color: white;
     font-weight: bolder;
@@ -68,7 +68,7 @@ li {
 i {
     color: white;
     padding: 10px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 footer {

@@ -12,6 +12,7 @@
 
 
 .contenido {
+    font-size: 20px;
     width: 100%;
     height: auto;
     padding: 40px;
@@ -29,7 +30,7 @@
 
 
 #estudios h4 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
     color: #b1189c;
     border-bottom: 1px #b1189c solid;
@@ -96,8 +97,8 @@
     height: 80%;
     text-align: center;
     padding: 7px;
-    line-height: 15px;
-    font-size: 10px;
+    line-height: 18px;
+    font-size: 15px;
     justify-items:flex-end;
     align-items: center;
     padding-bottom: 0px;
@@ -112,7 +113,7 @@
 
 .titulo {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 17px;
 }
 
 

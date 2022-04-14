@@ -5,6 +5,9 @@
     
 }
 
+body {
+    font-size: 30px;
+}
 nav {
     position: sticky;
     top: 0px;
@@ -22,6 +25,7 @@ nav ul {
 }
 
 nav ul li a{
+    font-size: 20px;
     color: #720F64;
 }
 
@@ -52,6 +56,7 @@ nav ul li a:hover {
 
 .column {
     padding: 30px;
+    line-height: 15px;
 }
 
 .column2 {
@@ -69,17 +74,21 @@ nav ul li a:hover {
 
 .sobremi2{
     width: 100%;
-    font-size: smaller;
+    font-size: 15px;
     color: white;
     font-style: italic;
     padding: 25px;
     text-align: right;
     left: 50%;
 } 
+
+.sobremiparrrafo {
+    font-size: 17px;
+}
 .column h1 {
     font-family: 'Cabin', sans-serif ;
     color: white;
-    font-size: 25px;
+    font-size: 33px;
     font-weight: 50;
     display: flex;
     justify-content: center;
@@ -90,6 +99,7 @@ nav ul li a:hover {
 
 #strong {
     font-weight: 1000;
+    font-size: 34px;
 }
 
 .column h2 {
@@ -97,12 +107,13 @@ nav ul li a:hover {
     color: antiquewhite;
     font-size: larger;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 30px;
     height: 10px;
     text-align: end;
     text-shadow: 1px 2px 5px  #ccc;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    padding-top: 10px;
 
 }
 

@@ -191,10 +191,14 @@ span {
 
 .form-group {
     line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* justify-content: center; */
 }
 
 .modal-body form .form-group label {
-    line-height: 7px;
+    line-height: 15px;
     margin-top: 5px;
     color: #720F64;
 }
@@ -202,8 +206,8 @@ span {
 .modal-body form .form-group button {
     border: none;
     color: #720F64;
-    left: 30%;
-    margin-left: 19%;
+    left: 40%;
+    /* margin-left: 19%; */
 }
 
 

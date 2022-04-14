@@ -28,10 +28,11 @@
     border-radius: 0.8em;
     font-size: 0.8em;
     padding: 1em;
+    font-size: 20px;
 }
 
 #skills h4 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
     color: #b1189c;
     border-bottom: 1px #b1189c solid;
@@ -209,13 +210,13 @@ i {
 .skillnombre {
     font-weight: bolder;
     color: black;
-    font-size: 12px;
+    font-size: 17px;
 }
 
 .porc {
     font-weight: bolder;
-    line-height: 15px;
-    font-size: 10px;
+    line-height: 18px;
+    font-size: 15px;
     color: #851275;
 
     

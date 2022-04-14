@@ -24,7 +24,7 @@
 
 
 .proyectos {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
     color: #b1189c;
     border-bottom: 1px #b1189c solid;
@@ -34,6 +34,10 @@
     align-items: center;
     justify-content: center;
     justify-self: center;
+}
+
+.proyectostitulo h4 {
+    font-size: 25px;
 }
 
 .proyectostitulo button i {
@@ -46,7 +50,7 @@
 
 .imagenproyecto {
     padding: 0px;
-    height: 183px;
+    height: 200px;
 }
 
 
