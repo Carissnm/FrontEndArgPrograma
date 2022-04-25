@@ -1,3 +1,16 @@
+-------------------- PARA INGRESAR AL PORTFOLIO HACERLO CON:------------------------
+
+COMO USER:
+
+NOMBRE: user
+PASSWORD: user
+
+COMO ADMIN:
+NOMBRE: admin
+PASSWORD: admin
+
+--------------------------------------------------------------------------------------------------------------------------------
+
 # PortfolioCarolinaPettinaroli
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
